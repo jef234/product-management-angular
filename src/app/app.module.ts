@@ -15,6 +15,7 @@ import { ProductListComponent } from './products/product-list.component';
 import { ProductFilterPipe } from './products/product-filter.pipe';
 import { ProductDetailComponent } from './products/product-detail.component';
 import { RegisterComponent } from './home/register.component';
+import { FormPosterService } from './services/FormPoster.service';
 
 @NgModule({
   declarations: [
@@ -36,8 +37,10 @@ import { RegisterComponent } from './home/register.component';
   ],
   providers: [
     ProductService,
-    ProductGuardService
+    ProductGuardService,
+    FormPosterService
   ],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

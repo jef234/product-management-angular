@@ -21,6 +21,7 @@ import { Component } from '@angular/core';
     <router-outlet></router-outlet>
   </div>`
 })
+
 export class AppComponent {
   // title = 'sample-app';
   pageTitle: String = 'Product Management';
