@@ -209,7 +209,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h2 class=\"mt-2 mb-4\">Register</h2>\n<form #form=\"ngForm\" (submit)='submitForm(form)'> \n  <div class=\"form-group row\">\n    <label for=\"firstName\" class=\"control-label col-sm-2 col-form-label\">First Name</label>\n    <div class=\"col-sm-10\">\n      <input #firstName=\"ngModel\" type=\"text\" class=\"form-control\" required id=\"firstName\" name=\"firstName\" placeholder=\"First Name\"\n        [(ngModel)]=\"model.firstName\" (ngModelChange)=\"firstLetterToUppercse($event)\"\n        [class.is-valid]=\"firstName.touched && firstName.valid\" [class.is-invalid]=\"firstName.touched && firstName.invalid\">\n        <div class=\"invalid-feedback\">First Name is Required</div>\n    </div>\n  </div>\n  <div class=\"form-group row\">\n    <label for=\"lastName\" class=\"col-sm-2 col-form-label\">Last Name</label>\n    <div class=\"col-sm-10\">\n      <input #lastName=\"ngModel\" required type=\"text\" class=\"form-control\" id=\"lastName\" name=\"lastName\" placeholder=\"Last Name\"\n        [(ngModel)]=\"model.lastName\"\n        [class.is-valid]=\"lastName.touched && lastName.valid\" [class.is-invalid]=\"lastName.touched && lastName.invalid\">\n        <div class=\"invalid-feedback\">Last Name is Required</div>\n    </div>\n  </div>\n  <button class=\"btn btn-primary\" [disabled]=\"form.invalid\" type=\"submit\">Submit</button>\n  <!-- <fieldset class=\"form-group\">\n    <div class=\"row\">\n      <legend class=\"col-form-label col-sm-2 pt-0\">Radios</legend>\n      <div class=\"col-sm-10\">\n        <div class=\"form-check\">\n          <input class=\"form-check-input\" type=\"radio\" name=\"gridRadios\" id=\"gridRadios1\" value=\"option1\" checked>\n          <label class=\"form-check-label\" for=\"gridRadios1\">\n            First radio\n          </label>\n        </div>\n        <div class=\"form-check\">\n          <input class=\"form-check-input\" type=\"radio\" name=\"gridRadios\" id=\"gridRadios2\" value=\"option2\">\n          <label class=\"form-check-label\" for=\"gridRadios2\">\n            Second radio\n          </label>\n        </div>\n        <div class=\"form-check disabled\">\n          <input class=\"form-check-input\" type=\"radio\" name=\"gridRadios\" id=\"gridRadios3\" value=\"option3\" disabled>\n          <label class=\"form-check-label\" for=\"gridRadios3\">\n            Third disabled radio\n          </label>\n        </div>\n      </div>\n    </div>\n  </fieldset>\n  <div class=\"form-group row\">\n    <div class=\"col-sm-2\">Checkbox</div>\n    <div class=\"col-sm-10\">\n      <div class=\"form-check\">\n        <input class=\"form-check-input\" type=\"checkbox\" id=\"gridCheck1\">\n        <label class=\"form-check-label\" for=\"gridCheck1\">\n          Example checkbox\n        </label>\n      </div>\n    </div>\n  </div>\n  <div class=\"form-group row\">\n    <div class=\"col-sm-10\">\n      <button type=\"submit\" class=\"btn btn-primary\">Sign in</button>\n    </div>\n  </div> -->\n</form>\n<p>\n  register works! <br>\n  {{pageTitle}} <br>\n  Model Data :: {{model | json}} <br>\n  Form Data :: {{form.value | json}}\n</p>"
+module.exports = "<h2 class=\"mt-2 mb-4\">Register</h2>\n<form #form=\"ngForm\" (submit)='submitForm(form)'> \n  <div class=\"form-group row\">\n    <label for=\"firstName\" class=\"control-label col-sm-2 col-form-label\">First Name</label>\n    <div class=\"col-sm-10\">\n      <input #firstName=\"ngModel\" type=\"text\" class=\"form-control\" required id=\"firstName\" name=\"firstName\" placeholder=\"First Name\"\n        [(ngModel)]=\"model.firstName\" (ngModelChange)=\"firstLetterToUppercse($event)\"\n        [class.is-valid]=\"firstName.touched && firstName.valid\" [class.is-invalid]=\"firstName.touched && firstName.invalid\">\n        <div class=\"invalid-feedback\">First Name is Required</div>\n    </div>\n  </div>\n  <div class=\"form-group row\">\n    <label for=\"lastName\" class=\"col-sm-2 col-form-label\">Last Name</label>\n    <div class=\"col-sm-10\">\n      <input #lastName=\"ngModel\" required type=\"text\" class=\"form-control\" id=\"lastName\" name=\"lastName\" placeholder=\"Last Name\"\n        [(ngModel)]=\"model.lastName\"\n        [class.is-valid]=\"lastName.touched && lastName.valid\" [class.is-invalid]=\"lastName.touched && lastName.invalid\">\n        <div class=\"invalid-feedback\">Last Name is Required</div>\n    </div>\n  </div>\n  <button class=\"btn btn-primary\" [disabled]=\"form.invalid\" type=\"submit\">Submit</button>\n  <!-- <fieldset class=\"form-group\">\n    <div class=\"row\">\n      <legend class=\"col-form-label col-sm-2 pt-0\">Radios</legend>\n      <div class=\"col-sm-10\">\n        <div class=\"form-check\">\n          <input class=\"form-check-input\" type=\"radio\" name=\"gridRadios\" id=\"gridRadios1\" value=\"option1\" checked>\n          <label class=\"form-check-label\" for=\"gridRadios1\">\n            First radio\n          </label>\n        </div>\n        <div class=\"form-check\">\n          <input class=\"form-check-input\" type=\"radio\" name=\"gridRadios\" id=\"gridRadios2\" value=\"option2\">\n          <label class=\"form-check-label\" for=\"gridRadios2\">\n            Second radio\n          </label>\n        </div>\n        <div class=\"form-check disabled\">\n          <input class=\"form-check-input\" type=\"radio\" name=\"gridRadios\" id=\"gridRadios3\" value=\"option3\" disabled>\n          <label class=\"form-check-label\" for=\"gridRadios3\">\n            Third disabled radio\n          </label>\n        </div>\n      </div>\n    </div>\n  </fieldset>\n  <div class=\"form-group row\">\n    <div class=\"col-sm-2\">Checkbox</div>\n    <div class=\"col-sm-10\">\n      <div class=\"form-check\">\n        <input class=\"form-check-input\" type=\"checkbox\" id=\"gridCheck1\">\n        <label class=\"form-check-label\" for=\"gridCheck1\">\n          Example checkbox\n        </label>\n      </div>\n    </div>\n  </div>\n  <div class=\"form-group row\">\n    <div class=\"col-sm-10\">\n      <button type=\"submit\" class=\"btn btn-primary\">Sign in</button>\n    </div>\n  </div> -->\n</form>\n<!-- <p>\n  register works! <br>\n  {{pageTitle}} <br>\n  Model Data :: {{model | json}} <br>\n  Form Data :: {{form.value | json}}\n</p> -->"
 
 /***/ }),
 
@@ -236,7 +236,7 @@ var RegisterComponent = /** @class */ (function () {
         this.formPoster = formPoster;
         this.pageTitle = 'Welcome to Register';
         this.languages = ['English', 'Hindi', 'French', 'German'];
-        this.model = new _models_employee_employee_module__WEBPACK_IMPORTED_MODULE_2__["EmployeeModule"]('John', 'Peter');
+        this.model = new _models_employee_employee_module__WEBPACK_IMPORTED_MODULE_2__["EmployeeModule"]('Jeffrey', 'Rajkumar');
     }
     RegisterComponent.prototype.ngOnInit = function () {
     };
@@ -247,7 +247,9 @@ var RegisterComponent = /** @class */ (function () {
     };
     RegisterComponent.prototype.submitForm = function (form) {
         console.log(form.value);
-        this.formPoster.postEmployeeData(form.value).subscribe(function (res) { return console.log('Data posted'); });
+        // this.formPoster.postEmployeeData(form.value).subscribe((res) => console.log('Data posted'));
+        this.formPoster.postEmployeeData(form.value);
+        alert('Data posted');
     };
     RegisterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -663,11 +665,11 @@ __webpack_require__.r(__webpack_exports__);
 var FormPosterService = /** @class */ (function () {
     function FormPosterService(_http) {
         this._http = _http;
-        this.URL = "http://localhost:4002";
+        this.URL = 'http://localhost:4002';
     }
     FormPosterService.prototype.postEmployeeData = function (employee) {
         console.log('Posting employee data :: ', employee);
-        return this._http.post(this.URL, employee);
+        return 0; // this._http.post(this.URL, employee);
     };
     FormPosterService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
