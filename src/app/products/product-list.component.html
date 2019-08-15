@@ -32,7 +32,7 @@
           </thead>
           <tbody>
             <tr *ngFor="let product of products | ProductFilter:listFilter">
-              <td><img [src]="product.imageUrl" class="Responsive image" [title]="product.productName"
+              <td><img [style.width.em]='5' [src]="product.imageUrl" class="Responsive image" [title]="product.productName"
                   *ngIf="showImage"></td>
               <td><a [routerLink]="['/products', product.productId]"
                   [queryParams]="{name: product.productName, img: product.imageUrl, desc: product.description}">
